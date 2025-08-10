@@ -17,9 +17,9 @@ export default function DatenschutzPage() {
 
 
       <p className="mb-4">
-        Bei <strong>Masala Taste of India</strong> (
-        <a href="https://www.masala-gf.de" className="text-blue-600 underline">
-          www.masala-gf.de
+        Bei <strong>Foodde Bringing Food to Life</strong> (
+        <a href="https://www.Foodde-gf.de" className="text-blue-600 underline">
+          www.Foodde-gf.de
         </a>
         ) nehmen wir den Schutz Ihrer persönlichen Daten sehr ernst. Diese Datenschutzerklärung erläutert, welche Daten wir erfassen und wie wir sie verwenden.
       </p>
@@ -68,8 +68,8 @@ export default function DatenschutzPage() {
       </p>
       <p className="mb-4">
         📧{' '}
-        <a href="mailto:info@masala-gf.de" className="text-blue-600 underline">
-          info@masala-gf.de
+        <a href="mailto:info@Foodde-gf.de" className="text-blue-600 underline">
+          info@Foodde-gf.de
         </a>
       </p>
 
@@ -78,8 +78,8 @@ export default function DatenschutzPage() {
         Bei Fragen zum Datenschutz stehen wir Ihnen jederzeit zur Verfügung:
         <br />
         📧{' '}
-        <a href="mailto:info@masala-gf.de" className="text-blue-600 underline">
-          info@masala-gf.de
+        <a href="mailto:info@Foodde-gf.de" className="text-blue-600 underline">
+          info@Foodde-gf.de
         </a>
       </p>
 

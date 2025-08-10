@@ -4,9 +4,9 @@ export const TEXT = {
   delivery_note: "Lieferung ist ebenfalls verfügbar.",
   home_page_disclaimer: "Das Essen kann vom Bild abweichen",
   logo_alt: "Logo",
-  brand: "Masala",
-  tag_line: "Taste of India",
-  brand_name: "Masala Taste of India",
+  brand: "",
+  tag_line: "Bringing Food to Life",
+  brand_name: "Foodde Bringing Food to Life",
 
   menu_list: [
     { name: "Heim", link: "/" },
@@ -73,7 +73,7 @@ export const TEXT = {
     copyright: {
       prefix: "Copyright ©",
       suffix: "All Rights Reserved by",
-      company: "Masala Taste of India",
+      company: "Foodde Bringing Food to Life",
     },
   },
 
@@ -195,7 +195,7 @@ aria_delete_user: "Benutzer löschen",
 };
 
 export const SEO = {
-  title: "Masala – Indisches Restaurant in Gifhorn, Niedersachsen",
+  title: "Foodde – Indisches Restaurant in Gifhorn, Niedersachsen",
   description:
-    "Genießen Sie authentische indische Küche bei Masala in Gifhorn. Jetzt online bestellen oder vor Ort besuchen.",
+    "Genießen Sie authentische indische Küche bei Foodde in Gifhorn. Jetzt online bestellen oder vor Ort besuchen.",
 };

@@ -112,7 +112,7 @@ error_select_payment_type: "ਭੁਗਤਾਨ ਦੀ ਕਿਸਮ ਚੁਣੋ"
 
 
 export const SEO = {
-  title: "Masala – Indian Restaurant in Gifhorn, Lower Saxony",
+  title: "Foodde – Indian Restaurant in Gifhorn, Lower Saxony",
   description:
-    "Authentic Indian food at Masala Gifhorn. Order online for delivery or visit us in Lower Saxony.",
+    "Authentic Indian food at Foodde Gifhorn. Order online for delivery or visit us in Lower Saxony.",
 };

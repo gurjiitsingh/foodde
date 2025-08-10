@@ -4,9 +4,9 @@ export const TEXT = {
   delivery_note: "Delivery is also available.",
   home_page_disclaimer: "Food may differ from image.",
   logo_alt: "Logo",
-  brand: "Masala",
-  tag_line: "Taste of India",
-  brand_name: "Masala Taste of India",
+  brand: "",
+  tag_line: "Bringing Food to Life",
+  brand_name: "Foodde Bringing Food to Life",
 
   menu_list: [
     { name: "Home", link: "/" },
@@ -71,7 +71,7 @@ export const TEXT = {
     copyright: {
       prefix: "Copyright ©",
       suffix: "All Rights Reserved by",
-      company: "Masala Taste of India",
+      company: "Foodde Bringing Food to Life",
     },
   },
 
@@ -191,7 +191,7 @@ aria_delete_user: "Delete User",
 };
 
 export const SEO = {
-  title: "Masala – Indian Restaurant in Gifhorn, Lower Saxony",
+  title: "Foodde – Indian Restaurant in Gifhorn, Lower Saxony",
   description:
-    "Authentic Indian food at Masala Gifhorn. Order online for delivery or visit us in Lower Saxony.",
+    "Authentic Indian food at Foodde Gifhorn. Order online for delivery or visit us in Lower Saxony.",
 };

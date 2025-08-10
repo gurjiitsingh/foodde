@@ -4,8 +4,8 @@ import Comcomp from "@/components/Comcomp";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Masala taste of India, Braunschweig-Broitzem",
-  description: "Masala taste of India, Indian food",
+  title: "Foodde Bringing Food to Life, Braunschweig-Broitzem",
+  description: "Foodde Bringing Food to Life, Indian food",
   other: {
     google: "notranslate",
   },
