@@ -1,12 +1,6 @@
 export const TEXT = {
-  home_page_offer: "",
-  offer_instruction: "",
-  delivery_note: "La livraison est également disponible.",
-  home_page_disclaimer: "Le plat peut différer de l’image.",
   logo_alt: "Logo",
-  brand: "Foodde",
-  tag_line: "Goût de l'Inde",
-  brand_name: "Foodde Goût de l'Inde",
+ 
 
   menu_list: [
     { name: "Accueil", link: "/" },
@@ -46,13 +40,18 @@ export const TEXT = {
     },
   },
 
+  searchForm: {
+  placeholder: "Rechercher des plats...",
+},
+
+
   footer_bottom: {
     poweredBy: "Propulsé par",
     poweredByUrl: "http://www.gstadeveloper.com",
     copyright: {
       prefix: "Copyright ©",
       suffix: "Tous droits réservés par",
-      company: "Foodde Goût de l'Inde",
+      company: "",
     },
   },
 
@@ -101,6 +100,19 @@ export const TEXT = {
   addressRequired: "Veuillez entrer l'adresse complète et le code postal pour estimer les frais de livraison",
 },
 
+//order failed
+orderFail: {
+  title: "Échec du paiement.",
+  message: "Utilisez un autre mode de paiement ou choisissez le paiement à la livraison",
+  retry: "Réessayer",
+},
+
+// Order Cancel
+orderCancel: {
+  title: "Paiement annulé.",
+  message: "Votre paiement a été annulé, veuillez réessayer.",
+  retry: "Réessayer",
+},
 
  // toast error message
   error_select_payment_type: "Sélectionnez le mode de paiement",
@@ -115,8 +127,3 @@ export const TEXT = {
 };
 
 
-export const SEO = {
-  title: "Foodde – Indian Restaurant in Gifhorn, Lower Saxony",
-  description:
-    "Authentic Indian food at Foodde Gifhorn. Order online for delivery or visit us in Lower Saxony.",
-};

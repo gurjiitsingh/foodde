@@ -1,11 +1,11 @@
 {
-  "name": "food-app-de",
+  "name": "masala-gf",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 5015",
+    "start": "next start -p 3005",
     "lint": "next lint",
     "check:unused": "ts-prune"
   },

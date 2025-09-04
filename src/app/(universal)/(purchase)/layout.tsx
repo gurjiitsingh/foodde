@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "../../globals.css";
+import "@/custom/globals.css";
 import Comcomp from "@/components/Comcomp";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Foodde Bringing Food to Life, Braunschweig-Broitzem",
-  description: "Foodde Bringing Food to Life, Indian food",
+  title: "Masala taste of India, Braunschweig-Broitzem",
+  description: "Masala taste of India, Indian food",
   other: {
     google: "notranslate",
   },
