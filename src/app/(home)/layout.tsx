@@ -44,7 +44,7 @@ export default function RootLayout({
             >
               <div
                 className="absolute top-0 inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+              
               ></div>
 
               <div className="z-50">
