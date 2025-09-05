@@ -12,6 +12,7 @@ import toast from "react-hot-toast";
 import CartButton from "../AddToCart/CartButton";
 import AddOn from "../level-1/AddOn";
 import { formatCurrencyNumber } from "@/utils/formatCurrency";
+import CartButtonAdd from "../AddToCart/CartButtonAdd";
 
 export default function ProdcutCardHorizontical({
   product,
@@ -21,7 +22,7 @@ export default function ProdcutCardHorizontical({
   allAddOns: addOnType[];
 }) {
   const [addOnData, setAddOnData] = useState<addOnType[]>([]);
-  const { productCategoryIdG, settings } = UseSiteContext();
+  const {  settings } = UseSiteContext();
 
   useEffect(() => {
     if (allAddOns.length !== 0 && product.flavors) {
@@ -110,42 +111,41 @@ export default function ProdcutCardHorizontical({
 
           {!product.flavors && (
             <div className=" flex  items-center  justify-between py-[1px]   rounded-3xl">
-              <div>Pack</div>
+            
               {/* common code start */}
               {product.discountPrice !== undefined &&
               product.discountPrice > 0 ? (
                 <div className="flex justify-between gap-3 items-center">
                   {" "}
-                  <div className="line-through">{priceRegular}</div>{" "}
-                  <div>{priceDiscounted}</div>
-                </div>
-              ) : (
-                <div>{priceRegular}</div>
-              )}
-              {/* common code end */}
-              <div>
-                {!isCartDisabled ? (
-                  <div className="product-card-add-button-cover-1 rounded-2xl">
-                  <CartButton cartProduct={cartProduct} /></div>
-                ) : (
-                  <div className="relative group ">
-                    <button
-                      onClick={() => {
-                        toast(
-                          "Mittagessen gibt’s nur von 11 bis 16 Uhr. Bitte etwas anderes wählen."
-                        );
-                      }}
-                      className="px-1 py-1 rounded-full bg-slate-500 cursor-not-allowed"
-                    >
-                      <IoMdAdd size={20} className="text-white" />
-                    </button>
-                    <div className="absolute bottom-full left-0 transform -translate-x-[100%] mb-2 w-max max-w-[200px] bg-gray-800 text-white text-xs p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity z-50">
-                      Mittagessen gibt’s nur von 11 bis 16 Uhr. Bitte etwas
-                      anderes wählen.
-                    </div>
+                  <div className="text-md font-bold text-slate-500">{priceDiscounted}</div>
+                  <div className="line-through text-sm text-slate-500">{priceRegular}</div>
+                  {" "}
                   </div>
-                )}
+              ) : (
+                <div className="text-md font-bold text-slate-500">{priceRegular}</div>
+              )}
+               {/* Cart Button */}
+        <div className="w-full flex justify-center mx-3 ">
+          {!isCartDisabled ? (
+            <CartButtonAdd cartProduct={cartProduct} />
+          ) : (
+            <div className="relative group">
+              <button
+                onClick={() =>
+                  toast(
+                    "Lunch available only from 11 to 16. Please choose another item."
+                  )
+                }
+                className="px-2 py-1 rounded-full bg-gray-400 cursor-not-allowed"
+              >
+                <IoMdAdd size={20} className="text-white" />
+              </button>
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max max-w-[220px] bg-gray-800 text-white text-xs p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity z-50">
+                Lunch available only from 11 to 16.
               </div>
+            </div>
+          )}
+        </div>
             </div>
           )}
         </div>

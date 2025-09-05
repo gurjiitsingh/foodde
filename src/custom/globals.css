@@ -161,7 +161,7 @@ body {
 } 
 
 .slick-arrow{
-  background-color: #438a57 !important;
+  background-color: #aaa !important;
   border-radius: 100%;
   padding-top:2px !important;
   z-index: 9999;
@@ -195,7 +195,14 @@ button:disabled {
 
 /* === Layout Colors === */
 .layout-bg {
-  @apply  bg-slate-100
+  @apply bg-gradient-to-r from-[#C6CDBF] to-[#ECECEC];
+  /* bg-gradient-to-r from-[#ECECEC] to-[#FFE0d2]; */
+  /* best */
+  /* bg-[#ECECEC] */
+   /* best */
+   /* bg-[#C6CDBF] green */
+   
+   /* bg-[#F5F4F7] */
   /* bg-gradient-to-t from-rose-50 to-slate-100  */
   /* bg-gradient-to-r from-[#FFFFFF] to-[#FAFAFA]; */
   /* bg-gradient-to-r from-[#FAFEFF] to-[#F0FCFF]; */
@@ -261,7 +268,7 @@ button:disabled {
 /* Nav bar */
 
 .header-bg {
-  @apply bg-[#FE8B2E];
+  @apply bg-[#ce8e32];
 }
 
 .navbar-link-top {

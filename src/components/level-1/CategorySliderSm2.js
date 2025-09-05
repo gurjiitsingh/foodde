@@ -109,8 +109,6 @@ export default function CategorySliderSm2() {
 
   return (
     <div className="relative z-10 mt-5 mb-7 container mx-auto ">
-   
-
       <div className="mx-auto max-w-[1700px] min-h-[100px]     p-1">
         {categoryData.length > 0 && (
           <Slider {...sliderSettings}>
@@ -123,51 +121,51 @@ export default function CategorySliderSm2() {
                   className="!flex   justify-center items-center px-1 py-1" // Add spacing between slides
                 >
                   <div className="bg-white pb-1 rounded-2xl">
-                  <button
-                    onClick={() => setProductCategoryIdG(category.id)}
-                    className={`
+                    <button
+                      onClick={() => setProductCategoryIdG(category.id)}
+                      className={`
           group max-w-[130px] h-[150px]  
           ${isActive ? "" : ""} 
            hover:shadow-md transition-all duration-300 ease-in-out
           flex flex-col items-center justify-start  gap-3
         `}
-                  >
-                    <div
-                      className={`${
-                        displayCategory === category.id
-                          ? "relative  rounded-xl overflow-hidden bg-gray-100 shadow-inner border-amber-200 border-2"
-                          : "relative  rounded-xl overflow-hidden bg-gray-100 shadow-inner"
-                      }`}
                     >
-                      {/* <div
+                      <div
+                        className={`${
+                          displayCategory === category.id
+                            ? "relative  rounded-xl overflow-hidden bg-gray-100 shadow-inner border-slate-200 border-2"
+                            : "relative  rounded-xl overflow-hidden bg-gray-100 shadow-inner"
+                        }`}
+                      >
+                        {/* <div
                       className={`${
                         displayCategory === category.id
                           ? "bg-amber-300 py-1 rounded-xl"
                           : "py-1 rounded-xl"
                       }`}
                     > */}
-                      <img
-                        src={category.image || "/com.jpg"}
-                        alt={category.name || "Category"}
-                        className=" h-full object-cover transition-transform group-hover:scale-105"
-                      />
-                    </div>
+                        <img
+                          src={category.image || "/com.jpg"}
+                          alt={category.name || "Category"}
+                          className=" h-full object-cover transition-transform group-hover:scale-105"
+                        />
+                      </div>
 
-                    <span
-                      className={`
-            text-center text-[15px]  h-[50px] font-medium leading-tight 
+                      <span
+                        className={`
+            text-center text-[15px]  h-[50px] font-bold leading-tight 
             ${
               isActive
-                ? "text-slate-600"
-                : "text-gray-800 group-hover:text-orange-600"
+                ? "text-zinc-600"
+                : "text-slate-500 group-hover:text-slate-300"
             }
           `}
-                    >
-                      {category.name}
-                    </span>
-                    
-                  </button>
-                </div></div>
+                      >
+                        {category.name}
+                      </span>
+                    </button>
+                  </div>
+                </div>
               );
             })}
           </Slider>
