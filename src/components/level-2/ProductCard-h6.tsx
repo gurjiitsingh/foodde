@@ -76,7 +76,7 @@ export default function ProdcutCardHorizontical({
 
   //common code end
   return (
-    <div className="bg-slate-50 w-full  lg:w-[48%]    shadow-lg flex flex-row   rounded-2xl items-center p-1">
+    <div className="bg-black w-full  lg:w-[48%]    shadow-lg flex flex-row   rounded-2xl items-center p-1">
       <div className="rounded-2xl flex items-center justify-center w-[120px] h-[120px]  md:w-[150px]  md:h-[150px]  overflow-hidden">
         {product.image && (
           <img
@@ -90,7 +90,7 @@ export default function ProdcutCardHorizontical({
       <div className="w-full flex flex-col pl-3 justify-between">
         <div className="w-full flex-col gap-4 justify-between ">
           <div className="w-full flex gap-1 mb-2 justify-between ">
-            <div className="flex text-slate-500 font-bold items-start justify-start  min-w-[180px] ">
+            <div className="flex text-slate-50 font-bold items-start justify-start  min-w-[180px] ">
            {/* product-card-add-title-cover-1 */}
               {/* {productCategoryIdG !== "" && <>{product.sortOrder}.&nbsp;</>} */}
               {product.name}

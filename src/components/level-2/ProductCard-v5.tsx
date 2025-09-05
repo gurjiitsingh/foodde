@@ -9,7 +9,6 @@ import { ProductType } from "@/lib/types/productType";
 import { addOnType } from "@/lib/types/addOnType";
 import { IoMdAdd } from "react-icons/io";
 import toast from "react-hot-toast";
-import CartButton from "../AddToCart/CartButton";
 import AddOn from "../level-1/AddOn";
 import { formatCurrencyNumber } from "@/utils/formatCurrency";
 import Image from "next/image";
@@ -17,7 +16,7 @@ import Image from "next/image";
 import { Cinzel, Lato, Roboto, Abel } from "next/font/google";
 import { Nunito_Sans } from "next/font/google";
 
-import CartButtonAdd from "../CartButtonAdd";
+import CartButtonAdd from "../AddToCart/CartButtonAdd";
 // import { Montserrat, Oswald, Bebas_Neue, Anton, Poppins } from "next/font/google";
 // import { Great_Vibes, Pacifico, Dancing_Script } from "next/font/google";
 import { Poppins } from "next/font/google";

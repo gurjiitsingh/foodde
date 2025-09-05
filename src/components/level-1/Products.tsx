@@ -11,9 +11,9 @@ import dynamic from "next/dynamic";
 let Card: React.ComponentType<any>;
 const cardType = process.env.NEXT_PUBLIC_PRODUCT_CARD_TYPE;
 switch (cardType) {
-  // case "1":
-  //   Card = dynamic(() => import("../level-2/ProductCard-v1")); // horizontal
-  //   break;
+  case "1":
+    Card = dynamic(() => import("../level-2/ProductCard-h1")); // horizontal
+    break;
 
   case "2":
     Card = dynamic(() => import("../level-2/ProductCard-v2")); // horizontal
@@ -27,6 +27,9 @@ switch (cardType) {
     break;
   case "5":
     Card = dynamic(() => import("../level-2/ProductCard-v5")); // horizontal
+    break;
+  case "6":
+    Card = dynamic(() => import("../level-2/ProductCard-h6")); // vertical
     break;
   default:
     Card = dynamic(() => import("../level-2/ProductCard-h1")); // vertical
@@ -106,8 +109,7 @@ export default function Products() {
     case "1":
       // Horizontal cards
       containerClass =
-        //"grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5";
-        "grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3";
+             "flex flex-col md:flex-row md:flex-wrap gap-3 md:gap-5";
       break;
     case "2":
       // Horizontal cards
@@ -134,7 +136,9 @@ export default function Products() {
         //"grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5";
         "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 ";
       break;
-
+    case "6":
+      containerClass = "flex flex-col md:flex-row md:flex-wrap gap-3 md:gap-5";
+      break;
     default:
       // Single column (stacked cards)
       containerClass = "flex flex-col md:flex-row md:flex-wrap gap-3 md:gap-5";
@@ -143,7 +147,6 @@ export default function Products() {
 
   return (
     <div className="container mx-auto w-full ">
-     
       <div className={containerClass}>
         {products.map((product, i) => (
           <Card
