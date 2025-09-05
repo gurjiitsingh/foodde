@@ -8,18 +8,18 @@ export const SEO = {
 export const BRANDING = {
   home_page_offer: "", // fallback for DB-driven value
   offer_instruction: "", // fallback for DB-driven value
-  delivery_note: "Lieferung ist ebenfalls verfügbar.",
+  delivery_note: "",//"Lieferung ist ebenfalls verfügbar.",
   home_page_disclaimer: "",//"Das Essen kann vom Bild abweichen",
-  brand: "Masala",
-  tag_line: "Taste of India",
-  brand_name: "Masala Taste of India",
+  brand: "",
+  tag_line: "Bringing Food to Life",
+  brand_name: "Bringing Food to Life",
 
    poweredBy: "Bereitgestellt von",
   poweredByUrl: "https://www.gstadeveloper.com",
   copyright: {
     prefix: "Urheberrecht ©",
     suffix: "Alle Rechte vorbehalten von",
-    company: "Masala Taste of India",
+    company: "Bringing Food to Life",
   },
 
 

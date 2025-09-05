@@ -1,7 +1,7 @@
 export const SEO = {
-  title: "Masala – Indian Restaurant in Gifhorn, Lower Saxony",
+  title: "Bringing Food to Life",
   description:
-    "Authentic Indian food at Masala Gifhorn. Order online for delivery or visit us in Lower Saxony.",
+    "Bringing Food to Life.",
 };
 
 
@@ -11,15 +11,15 @@ export const BRANDING = {
   offer_instruction: "",
   delivery_note: "Delivery is also available.",
   home_page_disclaimer:"",// "Food may differ from image.",
-  brand: "Masala",
-  tag_line: "Taste of India",
-  brand_name: "Masala Taste of India",
+  brand: "",
+  tag_line: "Bringing Food to Life",
+  brand_name: "Bringing Food to Life",
    poweredBy: "Powered by",
     poweredByUrl: "http://www.gstadeveloper.com",
     copyright: {
       prefix: "Copyright ©",
       suffix: "All Rights Reserved by",
-      company: "Masala Taste of India"
+      company: "Bringing Food to Life"
     },
 
 

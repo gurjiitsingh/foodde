@@ -195,7 +195,8 @@ button:disabled {
 
 /* === Layout Colors === */
 .layout-bg {
-  @apply  bg-gradient-to-t from-rose-50 to-slate-100 
+  @apply  bg-slate-100
+  /* bg-gradient-to-t from-rose-50 to-slate-100  */
   /* bg-gradient-to-r from-[#FFFFFF] to-[#FAFAFA]; */
   /* bg-gradient-to-r from-[#FAFEFF] to-[#F0FCFF]; */
   /* bg-gradient-to-r from-[#FFFFFB] to-[#FFFEEB]; */
