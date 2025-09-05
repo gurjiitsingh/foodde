@@ -268,7 +268,7 @@ button:disabled {
 /* Nav bar */
 
 .header-bg {
-  @apply bg-[#ce8e32];
+  @apply bg-[#b2cd9c];
 }
 
 .navbar-link-top {

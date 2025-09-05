@@ -32,7 +32,7 @@ const CartButtonAdd = ({ cartProduct }: { cartProduct: cartProductType }) => {
         <div className=" w-full my-2 x-2">
          
             {quantity > 0 ? (
-              <div className="flex justify-between rounded-lg gap-2 w-full bg-slate-200 px-1 py-2">
+              <div className="flex justify-between rounded-lg gap-2 w-full bg-[#C6CDBF] px-1 py-2">
                 <button
                   onClick={removeFromCartL}
                   className="px-1 py-[1px] rounded-lg bg-slate-400 leading-none flex items-center justify-center"
@@ -55,7 +55,7 @@ const CartButtonAdd = ({ cartProduct }: { cartProduct: cartProductType }) => {
             ) : (
               <button
                 onClick={addToCartL}
-                className=" w-full px-1 py-1 rounded-lg bg-slate-200 text-slate-600  flex items-center justify-center"
+                className=" w-full px-1 py-1 rounded-lg bg-[#C6CDBF] text-slate-600  flex items-center justify-center"
               >
                 Add
               </button>
